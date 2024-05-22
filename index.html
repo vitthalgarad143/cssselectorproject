@@ -34,10 +34,23 @@
         /*universal selector*/
         *{
             border: 10px solid #000;
+
+        }
+        /*group selector or combinational selector*/
+        div,span#a1,span.c1,a[href="https://www.google.com"]{
+            display: inline-block;
+        }
+        /*pseudo element selector*/
+        h1::before{
+            content: url('https://www.icegif.com/wp-content/uploads/2022/04/icegif-935.gif');
+        }
+        div#c2:hover{
+            background: red;
         }
 
 
     </style>
+    
 
 </head>
 <body>
@@ -48,6 +61,7 @@
     <span class="c1"> css class selector</span>
     <br>
     <a href="https://www.google.com">Go to google Website</a>
-    
+    <h1>this is heading first</h1>
+    <div id="c2">CSS Pesudo class Selector</div>
 </body>
 </html>
